@@ -1,0 +1,303 @@
+body {
+  margin: 0;
+}
+
+header {
+  /* position: absolute; */
+  background-size: cover;
+}
+
+.header {
+  text-align: right;
+  position: relative;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: end;
+  height: 20px;
+  position: absolute;
+right: 30px;
+top: 5px;
+color: #fff;
+}
+ 
+
+
+nav ul a {
+  text-decoration: none;
+}
+
+nav li {
+  font-size: 25px;
+  /* color: #fff; */
+  padding: 0 20px;
+  font-weight: bold;
+  color: #fff;
+  line-height: 3.5;
+}
+nav li:hover {
+  cursor: pointer;
+  background-image: url(img/earth.avif);
+  background-size: cover;
+  background-position: center;
+}
+
+
+.header img {
+  width: 100vw;
+  height: 900px;
+
+}
+
+.header h1 {
+  position: absolute;
+ top: 20%;
+ right:26%;
+ /* transform: translate(-20px -20px); */
+ font-size: 150px;
+ color: #fff;
+ text-shadow: 10px 10px 20px blue, -10px -10px 20px blue;
+}
+
+.mountain {
+  background-image: url(img/mountain.jpg);
+  height: 400px;
+  background-size: cover;
+  position: relative;
+  background-attachment: fixed;
+}
+
+.mountain h1 {
+  position: absolute;
+  top: 10%;
+  left: 15%;
+  transform: translate(-30px -30px); 
+  font-size: 140px;
+  color: #fff;
+  text-shadow: 10px 10px 20px blue, -10px -10px 20px blue;
+}
+.tourist {
+  animation-name: bounce;
+  animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-10px);
+  }
+  20% {
+    transform: translateY(-10px);
+  }
+  40% {
+    transform: translateY(10px);
+  }
+  60% {
+    transform: translateY(-10px);
+  }
+  80% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+.main {
+  margin: 0 130px 0;
+}
+
+.world {
+  text-align: center;
+  margin: 50px 0;
+  font-size: 40px;
+}
+
+.container ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; 
+}
+
+.container li {
+   box-sizing: border-box;
+   width: calc((85% - 30px) / 3) ;
+   /* margin:  0 70px 0; */
+   margin-top: 20px;
+   border: 1px solid #eee;
+   /* box-shadow: 5px 5px 5px 3px #eee; */
+   box-shadow: 0px 0px 20px 0px #bbb;
+}
+
+
+.container img {
+    width: 100%;
+    height: 320px;
+}
+
+.container img:hover {
+  box-shadow: 0px 0px 20px 0px #aaa;
+}
+
+.category {
+  font-size: 12px;
+  font-weight: normal;
+  margin-left: 20px;
+  
+}
+
+.text {
+  font-weight: bold;
+  margin: 0 20px 0;
+}
+
+.date {
+  text-align: right;
+  padding-bottom: 10px;
+  margin-right: 30px;
+  font-weight: normal;
+}
+
+.phone {
+  background-image: url(img/location.jpg);
+  height: 500px;
+  background-size: cover;
+  position: relative;
+  background-attachment: fixed;
+}
+
+.phone h1 {
+  position: absolute;
+  top: 15%;
+  left: 25%;
+  transform: translate(-40px -40px); 
+  font-size: 140px;
+  color: #fff;
+  text-shadow: 10px 10px 20px blue, -10px -10px 20px blue;
+}
+
+.location {
+  animation-name: bounce;
+  animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-10px);
+  }
+  20% {
+    transform: translateY(-10px);
+  }
+  40% {
+    transform: translateY(10px);
+  }
+  60% {
+    transform: translateY(-10px);
+  }
+  80% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+.map {
+  margin-top: 100px;
+  text-align: center;
+  filter: grayscale();
+}
+
+.address {
+  text-align: center;
+}
+
+.tell {
+  text-align: center;
+}
+
+.form h4 {
+  text-align: center;
+  background-color: aqua;
+  padding: 15px;
+  width: 300px;
+  border-radius: 30px;
+  margin: 20px auto;
+}
+
+.inquiry2 {
+  animation-name: bounce;
+  animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-10px);
+  }
+  20% {
+    transform: translateY(-10px);
+  }
+  40% {
+    transform: translateY(10px);
+  }
+  60% {
+    transform: translateY(-10px);
+  }
+  80% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+footer {
+  height: 700px;
+  background: linear-gradient(90deg,aqua,purple);
+}
+
+
+.a {
+  padding-top: 100px;
+}
+
+.a p {
+  font-weight: bold;
+  padding-bottom: 20px;
+  margin-left: 280px;
+  font-size: 20px;
+}
+
+.a input {
+  width: 1150px;
+  height: 30px;
+   display: block;
+   margin: 0 auto;
+}
+
+.a textarea {
+  width: 1150px;
+  height: 50px;
+  display: block;
+  margin: 0 auto;
+}
+
+button {
+width: 240px;
+height: 40px;
+margin: 0 auto;
+display: block;
+margin-top: 60px;
+background: linear-gradient(90deg,aqua,purple);
+}
+
+button:hover {
+  background: rgb(215, 30, 215);
+}
+
+.small {
+  font-size: 8px;
+  text-align: center;
+  padding-bottom: 20px;
+}
